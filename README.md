@@ -28,26 +28,63 @@
 
 1. 初始化一个工作目录
 
-```bash
-npm init
-```
+    ```bash
+    npm init
+    ```
 
 2. 安装json-server
 
-```bash
-npm install --save json-server
-```
+    ```bash
+    npm install --save json-server
+    ```
 
 3. 打开`package.json`
 4. 删除"scripts"项目,添加
 
-```json
-"scripts": {
-    "json:server": "json-server --watch db.json --port 3000"
-  },
-```
+    ```json
+    "scripts": {
+        "json:server": "json-server --watch db.json --port 3000"
+    },
+    ```
+
 5. 运行json-server
 
-```bash
-npm run json:server
+    ```bash
+    npm run json:server
+    ```
+
+## 接口说明
+
+### 1. 添加数据
+
+POST /
+
+<http://127.0.0.1/users>
+
+```json
+'Content-Type': 'application/json'
 ```
+
+### 2. 修改数据
+
+POST /
+修改id为1的数据
+
+<http://127.0.0.1/users/1/>
+
+```json
+'Content-Type': 'application/json'
+```
+
+### 3. 删除数据
+
+DELETE /
+删除id为1的数据
+
+<http://127.0.0.1/users/1/>
+
+### 4. 查找数据
+
+GET / 查找username=michael的数据
+
+<http://127.0.0.1/users?username=michael>
