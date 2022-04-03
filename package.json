@@ -1,0 +1,22 @@
+{
+  "name": "json-server-test",
+  "version": "1.0.0",
+  "description": "> 利用npm搭建一个基于json-server的、提供后端（json文件型）数据库访问的Restful API服务器；然后使用Ajax异步调用技术编写一个前端应用程序，通过调用上述Restful API服务器提供的数据访问接口，实现对后端数据库的增、删、改、查功能。",
+  "main": "index.js",
+  "scripts": {
+    "test": "json-server --watch db.json --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michaelzhouisnotwhite/Json-server-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michaelzhouisnotwhite/Json-server-Test/issues"
+  },
+  "homepage": "https://github.com/Michaelzhouisnotwhite/Json-server-Test#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

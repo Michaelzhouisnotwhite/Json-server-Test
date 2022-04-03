@@ -1,13 +1,10 @@
 {
   "users": [
     {
-      "id": 1,
-      "username": "michael",
+      "username": "michael-zhou",
       "password": "zyq123",
       "email": "zyqing601@163.com",
-      "collection": [
-        "1"
-      ]
+      "id": 1
     },
     {
       "id": 2,
